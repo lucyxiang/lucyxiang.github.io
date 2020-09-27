@@ -8,7 +8,7 @@
 
     .title {
       text-align: center;
-      font-size: 4.5rem;
+      font-size: 3.5rem;
       font-weight: 300;
       margin-block-end: 0.35em;
       margin-block-start: 0.35em;
@@ -16,11 +16,11 @@
 
     .main {
       font-weight: 400;
-      position: absolute;
-      top: 75%;
-      left: 50%;
-      margin-right: -50%;
-      transform: translate(-50%, -50%);
+      position: relative;
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left: 7.5em;
+      margin-right: 7.5em;
     }
 
     body {
@@ -32,6 +32,8 @@
     .button {
       float: right;
       font-family: 'Oswald', sans-serif;
+      background-color: #121212;
+      color: #EEEEEE;
     }
 
     a:link,
@@ -43,18 +45,25 @@
       background-color: #121212;
       color: #EEEEEE;
     }
+
+    .dark-mode-btn {
+      background-color: #EEEEEE;
+      color: #121212;
+    }
   </style>
   <script>
     function toggle() {
       var element = document.body;
       element.classList.toggle("dark-mode");
+
+      var button = document.getElementsByTagName("button")[0]
+      button.classList.toggle("dark-mode-btn")
     }
   </script>
 </head>
 
 <body>
   <div class="main">
-    </br>
     <button class="button" onclick="toggle()">Toggle dark mode</button>
     <h1 class="title">Lucy Xiang</h1>
 
