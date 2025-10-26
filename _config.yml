@@ -1,0 +1,17 @@
+# Site settings
+title: Lucy Xiang
+email: sam.lucy.xiang@gmail.com
+description: Personal website
+url: "https://www.lucyxiang.com"
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+
+# Collections
+collections:
+  projects:
+    output: false
